@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --light: #FCFBFF;
+    --dark: #020617;
+    --main-color: #075fe4;
+    --second-color: #5354c1;
+    --third-color: #00D9FF;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
+    min-height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #16181f;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+
+.logoBernardo {
+    width: 70px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.logoBernardo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--light);
+    align-items: center;
+}
+
+.divLeft {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light);
+    position: relative;
+    padding-bottom: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--third-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: var(--third-color);
+}
+
+#navMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.menuIcon, .closeIcon {
+    display: none;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6px;
+    gap: 20%;
+    background-color: var(--dark);
+    z-index: 100;
+}
+
+#nav-close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--light);
+    display: none;
+}
+
+#nome {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, var(--second-color), var(--main-color), var(--third-color));
+}
+
+#theme, .nav_toggle {
+    color: var(--light);
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+#theme:hover, .nav_toggle:hover {
+    transform: scale(1.3);
+    color: var(--third-color);
+}
+
+.start {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 3%;
+}
+.contentStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--light);
+    padding: 10px;
+    margin-top: 3rem;
+}
+
+.contentStart h1 {
+    font-size: 3rem;
+}
+
+.contentStart h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--second-color);
+    margin-bottom: .75rem;
+    width: 23ch;
+    animation: typing 2.5s steps(23) 1.5s normal both, 
+    blinking 0.3s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.contentStart p {
+    margin-bottom: 2rem;
+    font-size: 14.8px;
+}
+
+.divMain {
+    display: flex;
+}
+
+.divMain p {
+    max-width: 440px;
+}
+
+.redesSociais {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    padding: 0 5px;
+}
+
+.divPhoto img {
+    max-width: 500px;
+    padding: 5px 5px 5rem;
+}
+
+
+.redesSociais a i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.redesSociais a i:hover, 
+.redesSociais a:hover {
+    color: var(--third-color);
+    transition: 0.4s ease-in-out;
+    transform: scale(1.6);
+}
+
+.contact {
+    padding: .8rem;
+    display: inline-block;
+    background-color: var(--main-color);
+    font-weight: 500;
+    border-radius: .5rem;
+    cursor: pointer;
+    color: #FCFBFF;
+    width: 145px;
+}
+
+.contact:hover {
+    background-color: #003b94;
+    transition: .3s;
+}
+.btnFlex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact i {
+    font-size: 1.25rem;
+    margin-left: .5rem;
+}
+
+.homeScrlBtn {
+    color: var(--main-color);
+    margin-top: 5rem;
+    transition: .3s;
+}
+
+.homeScrlBtn:hover {
+    transform: translateY(0.5rem);
+}
+
+.home-scroll span {
+    font-size: .813rem;
+    color: rgb(146, 146, 146);
+    font-weight: 500;
+    margin-right: 0.25rem;
+}
+
+.uil-mouse-alt {
+    font-size: 2rem;
+}
+
+.uil-arrow-down {
+    font-size: 1.25rem;
+}
+
+section {
+    min-height: 100vh;
+    text-align: center;
+}
+
+#technologies {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--light);
+    gap: 5rem;
+}
+
+.title {
+    padding-top: 50px;
+    font-size: 100px;
+    color: rgba(48, 2, 121, 0.24);
+    position: relative;
+}
+
+.title:before {
+    content: attr(titulo);
+    position: absolute;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, var(--second-color), var(--third-color));
+    font-size: 80px;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#technologies ul {
+    display: flex;
+    list-style: none;
+    gap: 10rem;
+}
+
+#technologies li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: solid 4px transparent;
+}
+
+#technologies h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 1.5rem;
+    z-index: 12;
+}
+
+#technologies svg {
+    font-size: 10rem;
+    color: #a29ea4;
+}
+
+#technologies li:hover svg{
+    filter: blur(9px);
+}
+
+#technologies li:hover h3 {
+    color: var(--light);
+}
+
+#technologies li:hover {
+    border: solid 4px var(--third-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 2px var(--main-color);
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.aboutPhoto img {
+    width: 350px;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    color: var(--light);
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    width: 35%;
+}
+
+.aboutInfo p {
+    text-align: start;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--light);
+    width: 30%;
+    height: 16.8rem;
+    border-radius: 21px;
+    background-color: black;
+    position: relative;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#projects li:hover img{
+    filter: blur(3px);
+}
+
+#projects li:hover .tecnologias,
+#projects li:hover .h3 {
+    display: none;
+}
+
+#projects li:hover .linkIcons i {
+    color: #ffffff10;
+}
+
+#projects li:hover {
+    border: solid 4px var(--second-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px var(--second-color);
+}
+
+#projects li:hover .descricao {
+    color: #fff;
+}
+
+.descricao {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.projeto img {
+    max-width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+.projeto h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    margin: 4%;
+    font-size: 1.5rem;
+}
+
+.allProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    z-index: 25;
+}
+
+.linkIcons i:hover{
+    color: var(--third-color) !important;
+}
+
+.linkIcons i {
+    font-size: 3rem;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tecnologias {
+    align-items: center;
+    position: absolute;
+    bottom: 50%;
+    margin-left: 1.5rem;
+    transform: translateY(50%);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+strong {
+    color: var(--second-color);
+}
+
+.links {
+    position: absolute;
+    right: 0;
+    margin-right: 1.5rem;
+}
+
+
+.downloadCv {
+    max-width: 50%;
+    padding: 15px;
+    border-radius: 1rem;
+    display: flex;
+    color: var(--second-color);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background: transparent;
+    cursor: pointer;
+    border: solid 3px var(--second-color);
+}
+
+.downloadCv:hover{
+    background: var(--second-color);
+    color: #fff;
+}
+.downloadCv i {
+    padding-left: .3rem;
+}
+
+.linksContato {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+}
+
+#inContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato span {
+    color: var(--light);
+    font-size: 1.5rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.contato span:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+.contato i {
+    color: var(--light);
+    font-size: 2.4rem;
+    transition: .2 ease-in-out;
+}
+
+.contato i:hover {
+    transform: scale(1.2);
+    color: var(--third-color);
+}
+
+.contato a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 5rem;
+    justify-content: space-evenly;
+}
+
+.form {
+    margin: auto;
+    background-color: var(--dark);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 3px solid var(--third-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 2rem;
+    padding: 21px 10px 8px 10px;
+}
+.inpuBox{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.inpuBox  textarea {
+    max-width: 100%;
+    border: solid 1px white;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 80px;
+}
+
+.inputUser {
+    background: none;
+    border: 2px solid var(--third-color);
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    color: var(--light);
+    font-size: 17px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.inpuBox textarea {
+    border: 2px solid var(--third-color);
+}
+
+.labelAnimada {
+    position: absolute;
+    background-color: var(--dark);
+    padding: 5px 5px 0 5px;
+    top: 0px;
+    left: 0px;
+    color: var(--light);
+    pointer-events: none;
+    transition: .3s ease-in-out;
+    margin: 5px;
+}
+
+.inputUser:focus ~ .labelAnimada,
+.inputUser:valid ~ .labelAnimada {
+    top: -23px;
+    left: 15px;
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+legend {
+    background: linear-gradient(to right,var(--third-color), var(--main-color));;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+fieldset button {
+    background-image: linear-gradient(to right,var(--third-color), var(--main-color));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+fieldset button:hover {
+    background-image: linear-gradient(to right, #068ca3, #003077);
+}
+
+
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--light);
+    border-top: solid 2px;
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 600;
+}
+
+#footer i {
+    font-size: 1.7rem;
+    color: var(--light);
+}
+
+#footer i:hover {
+    color: var(--main-color);
+}
+
+#footer a {
+    transition: .6 ease-in-out;
+}
+
+#footer a:hover {
+    transform: scale(1.2);
+}
+
+.redeSociaisFooter {
+    display: flex;
+    gap: 1.5rem;
+}
+

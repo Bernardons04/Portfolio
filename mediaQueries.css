@@ -1,0 +1,299 @@
+/*Tela Maior*/
+@media screen and (max-width: 1440px) {
+    .divPhoto img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        font-size: 18px;
+    }
+    
+    .logoBernardo {
+        width: 60px;
+        transition: .3s;
+    }
+    .contentStart h1 {
+        font-size: 1.9rem;
+    }
+
+    .contentStart p {
+        font-size: .914rem;
+        margin-bottom: 2rem;
+    }
+    .divPhoto img {
+        max-width: 400px;
+    }
+    .contact {
+        font-size: .93rem;
+        width: 145px;
+    }
+    .title {
+        font-size: 85px;
+    }   
+    .title:before {
+        font-size: 70px;
+    }
+    #technologies svg {
+        font-size: 8rem;
+    }
+    #technologies h3 {
+        font-size: 1.25rem;
+    }
+    .contentStart h2 {
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+    }
+    .divPhoto img {
+        max-width: 300px;
+    }
+}
+
+/*Tela Tablet*/
+@media screen and (max-width: 768px) {
+    .navLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+        color: var(--light);
+        font-weight: 500;
+    }
+    header {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px 5px 20px;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+    #navMenu {
+        display: none;
+    }
+    .show-menu{
+        display: block !important;
+        position: absolute;
+        bottom: 71px;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark);
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.336);
+        padding: 2rem 1.5rem 2rem;
+        border-radius: 1rem 1rem 0 0;
+        justify-content: center;
+    }
+    nav a::after {
+
+        left: 35%;
+    }
+    
+    nav a:hover::after {
+        width: 30%;
+    }
+    
+    .navList {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .contentStart p {
+        font-size: 12px;
+    }
+
+    .contentStart {
+        padding: 5px;
+        max-width: 80%;
+    }
+    .start {
+        max-width: 100%;
+    }
+    .divPhoto img {
+        max-width: 250px;
+        margin-right: 5rem;
+    }
+    .divMain {
+        max-width: 70%;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+ 
+    .logoBernardo {
+        width: 50px;
+        transition: .3s;
+    }
+
+    .contact {
+        font-size: .9rem;
+        width: 145px;
+    }
+    .title {
+        font-size: 85px;
+    }
+    .title:before {
+        font-size: 60px;
+    }
+    #technologies ul {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 740px) { 
+    /*A partir daqui o main quebra*/
+    .start {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+    }
+    .divPhoto img {
+        max-width: 300px;
+        margin-top: -7rem;
+    }
+
+    .contentStart {
+        max-width: 100%;
+    }
+    nav {
+        font-size: 18px;
+    }
+    .homeScrlBtn {
+        display: none;
+    }
+    .redesSociais{
+        position: absolute;
+        top:25%;
+        left: 5%;
+    }
+    .logoBernardo {
+        width: 50px;
+        transition: .3s;
+    }
+    .homeScrlBtn {
+        margin-top: 2rem;
+        transition: .3s;
+    }
+    .divPhoto img {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title {
+        font-size: 70px;
+    }
+    .title:before {
+        font-size: 60px;
+    }
+    #technologies ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 1rem;
+    }
+    .contentStart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divMain {
+        max-width: 100%;
+    }
+}
+
+/*Tela Pequena*/
+@media screen and (max-width: 425px) {
+    .logoBernardo {
+        width: 50px;
+        transition: .3s;
+    }
+    .redesSociais{
+        position: absolute;
+        top:20%;
+        left: 2%;
+    }
+    .start {
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divPhoto img {
+        max-width: 300px;
+    }
+    .title {
+        font-size: 55px;
+    }
+    .title:before {
+        font-size: 45px;
+    }
+    #technologies svg {
+        font-size: 7rem;
+    }
+    .aboutPhoto img {
+        width: 260px;
+    }
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .redesSociais{
+        position: absolute;
+        top:13%;
+        left: 2%;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .title:before {
+        font-size: 40px;
+    }
+    .contentStart h2 {
+        font-size: 1.1rem;
+        letter-spacing: 1.3px;
+    }
+    .start {
+        margin: 0;
+    }
+    .divPhoto img {
+        max-width: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .divPhoto img {
+        max-width: 200px;
+    }
+    .redesSociais{
+        position: absolute;
+        font-size: 1.5rem;
+        top:12%;
+        left: 2%;
+    }
+    .contentStart h1 {
+        font-size: 1.6rem;
+    }
+    .title {
+        font-size: 45px;
+    }
+    .title:before {
+        font-size: 40px;
+    }
+    #technologies svg {
+        font-size: 6rem;
+    }
+
+}
