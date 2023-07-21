@@ -4,7 +4,7 @@ Readme.Github
 
 ## 📱Descrição do projeto
 
-### Esse projeto se trata do meu portfólio
+### Esse projeto se trata do meu portfólio.
 
 ## 🎯Proposta do projeto
 
@@ -12,9 +12,9 @@ Readme.Github
 
 ## 🔨Funcionalidades da aplicação web - RFs
 
-- `Funcionalidade 1`: Alternar entre o modo claro e o modo escuro
-- `Funcionalidade 2`: Vários links, incluindo no menu que facilitarão a navegação
-- `Funcionalidade 3`: Formulário para envio de mensagem
+- `Funcionalidade 1`: Alternar entre o modo claro e o modo escuro.
+- `Funcionalidade 2`: Vários links, incluindo no menu que facilitarão a navegação.
+- `Funcionalidade 3`: Formulário para envio de mensagem.
 
 ## ✔️Tecnologias utilizadas
 
