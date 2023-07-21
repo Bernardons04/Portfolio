@@ -1,10 +1,10 @@
 Readme.Github
 
-# Pokédex
+# Portfólio
 
 ## 📱Descrição do projeto
 
-### Esse projeto se trata do meu portfólio.
+### Esse projeto se trata do meu portfólio, que eu fiz com o intuito de apresentar um pouco sobre mim e minhas habilidades
 
 ## 🎯Proposta do projeto
 
@@ -12,10 +12,9 @@ Readme.Github
 
 ## 🔨Funcionalidades da aplicação web - RFs
 
-- `Funcionalidade 1`: Buscar por qualquer pokémon através do seu número.
-- `Funcionalidade 2`: Buscar por qualquer pokémon através do seu nome.
-- `Funcionalidade 3`: Botão para passar para o próximo pokémon.
-- `Funcionalidade 4`: Botão para passar para o pokémon anterior.
+- `Funcionalidade 1`: Alternar entre o modo claro e o modo escuro
+- `Funcionalidade 2`: Vários links, incluindo no menu que facilitarão a navegação
+- `Funcionalidade 3`: Formulário para envio de mensagem
 
 ## ✔️Tecnologias utilizadas
 
@@ -30,4 +29,4 @@ Readme.Github
 </p>
 
 ## Interessado em testar o web app? Clique no link abaixo:
-### https://bernardons04.github.io/Pokedex/
+### https://bernardons04.github.io/Portfolio/
