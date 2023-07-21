@@ -4,11 +4,11 @@ Readme.Github
 
 ## 📱Descrição do projeto
 
-### Esse projeto se trata do meu portfólio, que eu fiz com o intuito de apresentar um pouco sobre mim e minhas habilidades
+### Esse projeto se trata do meu portfólio
 
 ## 🎯Proposta do projeto
 
-### Colocar em prática os meus conhecimentos sobre consumo de API.
+### Apresentar um pouco sobre mim e minhas habilidades, e também, aprender bastante no processo.
 
 ## 🔨Funcionalidades da aplicação web - RFs
 
