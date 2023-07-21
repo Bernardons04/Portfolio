@@ -3,6 +3,18 @@
     .divPhoto img {
         max-width: 400px;
     }
+    .descricao {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+    .linkIcons i {
+        font-size: 2.5rem;
+
+    }
+    .tecnologias {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -47,6 +59,32 @@
     }
     .divPhoto img {
         max-width: 300px;
+    }
+    .contactSection {
+        justify-content: center;
+        gap: 1rem;
+    }
+    fieldset {
+        width: 23rem;
+        gap: 1rem;
+    }
+    .contato span {
+        font-size: 1.2rem;
+    }
+    .aboutSection {
+        gap: 2rem;
+    }
+    .downloadCv {
+        max-width: 50%;
+        padding: 10px;
+        display: flex;
+        color: var(--second-color);
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+        background: transparent;
+        cursor: pointer;
+        border: solid 3px var(--second-color);
     }
 }
 
@@ -143,6 +181,30 @@
     #technologies ul {
         gap: 5rem;
     }
+    .downloadCv {
+        max-width: 25%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+    .contactSection {
+        gap: .5rem;
+    }
+    .contato a {
+        gap: .5rem;
+    }
+    .aboutSection {
+        flex-direction: column;
+    }
+    .aboutInfo {
+        max-width: 80%;
+        align-items: center;
+    }
+    .downloadCv {
+        max-width: 60%;
+    }
+    #footer {
+        margin-bottom: 71px;
+    }
 }
 
 @media screen and (max-width: 740px) { 
@@ -183,6 +245,21 @@
         margin: 0;
         padding: 0;
     }
+    .contactSection {
+        gap: .5rem;
+        flex-direction: column;
+    }
+    .linksContato {
+        gap: 1rem;
+    }
+    fieldset {
+        width: 30rem;
+        gap: 1rem;
+    }
+    .allProjects {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -205,6 +282,20 @@
     }
     .divMain {
         max-width: 100%;
+    }
+    .contactSection {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .projeto {
+        width: 400px;
+        height: 14.09rem;
+    }
+    .descricao {
+        font-size: 1.3rem;
+        font-weight: 500;
     }
 }
 
@@ -246,6 +337,52 @@
         justify-content: center;
         gap: 5rem;
     }
+    fieldset {
+        width: 20rem;
+        gap: 1rem;
+    }
+    .contactSection {
+        align-items: center;
+    }
+    .inputUser {
+        font-size: 15px;
+    }
+    .aboutInfo p {
+        font-size: 14px;
+        letter-spacing: .2px;
+    }
+    .projeto {
+        width: 370px;
+        height: 13rem;
+    }
+    .tecnologias {
+        font-size: 1.05rem;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        bottom: 10px;
+        right: -10px;
+    }
+    .linkIcons i {
+        font-size: 2rem;
+    }
+    .projeto h3 {
+        font-size: 1.2rem;
+    }
+    #footer p {
+        font-size: 0.9rem;
+    }
+    .redeSociaisFooter {
+        gap: 1rem;
+    }
+    .descricao {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    #footer a i {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -270,7 +407,31 @@
     .divPhoto img {
         max-width: 250px;
     }
-    
+    fieldset {
+        width: 18rem;
+    }
+    .contato span {
+
+        font-size: 1rem;
+
+    }
+    .contato i {
+        font-size: 2rem;
+    }
+    fieldset button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+
+    }
+    .descricao {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .projeto {
+        width: 350px;
+        height: 12.3rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -295,5 +456,12 @@
     #technologies svg {
         font-size: 6rem;
     }
-
+    .projeto {
+        width: 300px;
+        height: 10.5rem;
+    }
+    .descricao {
+        font-size: 1rem;
+        font-weight: 500;
+    }
 }
