@@ -31,7 +31,7 @@
     }
 
     .contentStart p {
-        font-size: .914rem;
+        font-size: 1rem;
         margin-bottom: 2rem;
     }
     .divPhoto img {
@@ -141,7 +141,7 @@
     }
 
     .contentStart p {
-        font-size: 12px;
+        font-size: 0.9rem;
     }
 
     .contentStart {
@@ -216,9 +216,14 @@
     }
     .divPhoto img {
         max-width: 300px;
-        margin-top: -7rem;
+        margin: 0;
+        margin-top: -3rem;
+        padding: 0;
     }
-
+    .contentStart p {
+        font-size: 1rem;
+        
+    }
     .contentStart {
         max-width: 100%;
     }
@@ -240,10 +245,6 @@
     .homeScrlBtn {
         margin-top: 2rem;
         transition: .3s;
-    }
-    .divPhoto img {
-        margin: 0;
-        padding: 0;
     }
     .contactSection {
         gap: .5rem;
@@ -311,9 +312,12 @@
         left: 2%;
     }
     .start {
-        margin-left: 3rem;
+        margin-left: 2rem;
         display: flex;
         flex-direction: column-reverse;
+    }
+    .contentStart p {
+        font-size: .9rem;
     }
     .divPhoto img {
         max-width: 300px;
@@ -405,7 +409,8 @@
         margin: 0;
     }
     .divPhoto img {
-        max-width: 250px;
+        max-width: 230px;
+        margin-top: 1rem;
     }
     fieldset {
         width: 18rem;

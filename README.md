@@ -16,6 +16,7 @@ Readme.Github
 - `Funcionalidade 1`: Alternar entre o modo claro e o modo escuro.
 - `Funcionalidade 2`: Vários links, incluindo no menu que facilitarão a navegação.
 - `Funcionalidade 3`: Formulário para envio de mensagem.
+- `Funcionalidade 4`: Essa aplicação web é responsiva, ou seja, adaptável para diversos tipos de telas.
 
 ## ✔️Tecnologias utilizadas
 
