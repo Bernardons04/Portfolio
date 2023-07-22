@@ -27,8 +27,8 @@ Readme.Github
 ## <p align="center">📱Interface</p>
 
 <p align="center">
-<img src="images/Portfolio.png" width="450px" align="center">
+<img src="images/Portfolio.png" width="700px" align="center">
 </p>
 
-## Interessado em testar o web app? Clique no link abaixo:
+## Gostaria de dar uma olhada no meu portfólio? Clique no link abaixo:
 ### https://portfolio-bernardo.netlify.app/
