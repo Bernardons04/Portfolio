@@ -437,7 +437,7 @@ section {
 .descricao {
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: transparent;
