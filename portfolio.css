@@ -187,7 +187,8 @@ header {
     color: var(--second-color);
     margin-bottom: .75rem;
     width: 23ch;
-    animation: typing 2.5s steps(23) 1.5s normal both, 
+    padding: 0;
+    animation: typing 5s steps(23, end) alternate infinite, 
     blinking 0.3s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -195,8 +196,11 @@ header {
 }
 
 @keyframes typing {
-    from {
+    0% {
         width: 0;
+    }
+    100% {
+        width: 24ch;
     }
 }
 @keyframes blinking {
