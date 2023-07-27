@@ -3,6 +3,7 @@ let body = document.getElementById("body");
 const theme = document.getElementById("theme");
 const navMenu = document.getElementById("navMenu")
 const navToggle = document.getElementById("nav-toggle")
+const li_s = document.querySelectorAll(".itemNav")
 
 theme.addEventListener('click', () => {
     if (light === "#FCFBFF") {
@@ -29,4 +30,12 @@ navToggle.addEventListener('click', () => {
         navToggle.style.color = "var(--light)"
         navToggle.style.transform = "scale(1)";
     }
+});
+
+Array.from(li_s).forEach((li) => {
+    li.addEventListener('click', () => {
+        navMenu.classList.toggle('show-menu')
+        navToggle.style.color = "var(--light)"
+        navToggle.style.transform = "scale(1)";
+    });
 });
