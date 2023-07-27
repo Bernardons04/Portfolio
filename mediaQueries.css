@@ -17,6 +17,12 @@
     }
 }
 
+@media screen and (max-width: 1046px) {
+    .contentStart h1 {
+        font-size: 2.5rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     nav {
         font-size: 18px;
@@ -29,7 +35,10 @@
     .contentStart h1 {
         font-size: 1.9rem;
     }
-
+    .contentStart h2 {
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+    }
     .contentStart p {
         font-size: 1rem;
         margin-bottom: 2rem;
@@ -52,10 +61,6 @@
     }
     #technologies h3 {
         font-size: 1.25rem;
-    }
-    .contentStart h2 {
-        font-size: 1.2rem;
-        letter-spacing: 1.5px;
     }
     .divPhoto img {
         max-width: 300px;
@@ -86,6 +91,9 @@
         cursor: pointer;
         border: solid 3px var(--second-color);
     }
+    .start {
+        padding-top: 2rem;
+    }
 }
 
 /*Tela Tablet*/
@@ -100,7 +108,7 @@
     }
     header {
         position: fixed;
-        bottom: 0;
+        top: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -116,13 +124,13 @@
     .show-menu{
         display: block !important;
         position: absolute;
-        bottom: 71px;
+        top: 71px;
         left: 0;
         width: 100%;
         background-color: var(--dark);
-        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.336);
+        box-shadow: -1px 0 4px rgba(0, 0, 0, 0.336);
         padding: 2rem 1.5rem 2rem;
-        border-radius: 1rem 1rem 0 0;
+        border-radius: 0 0 1rem 1rem;
         justify-content: center;
     }
     nav a::after {
@@ -145,18 +153,14 @@
     }
 
     .contentStart {
-        padding: 5px;
-        max-width: 80%;
+        max-width: 100%;
     }
+    
     .start {
         max-width: 100%;
     }
     .divPhoto img {
-        max-width: 250px;
-        margin-right: 5rem;
-    }
-    .divMain {
-        max-width: 70%;
+        max-width: 300px;
     }
 
     #nav-toggle {
@@ -196,14 +200,11 @@
         flex-direction: column;
     }
     .aboutInfo {
-        max-width: 80%;
+        max-width:70%;
         align-items: center;
     }
     .downloadCv {
         max-width: 60%;
-    }
-    #footer {
-        margin-bottom: 71px;
     }
 }
 
@@ -212,7 +213,9 @@
     .start {
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 5rem;
+
+        gap: 0;
+        margin-top: 6rem;
     }
     .divPhoto img {
         max-width: 300px;
@@ -260,6 +263,7 @@
     .allProjects {
         flex-direction: column;
         justify-content: center;
+        gap: 3rem;
     }
 }
 
@@ -279,7 +283,6 @@
     .contentStart {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     .divMain {
         max-width: 100%;
@@ -298,6 +301,9 @@
         font-size: 1.3rem;
         font-weight: 500;
     }
+    .aboutInfo {
+        max-width:80%;
+    }
 }
 
 /*Tela Pequena*/
@@ -312,7 +318,6 @@
         left: 2%;
     }
     .start {
-        margin-left: 2rem;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -339,8 +344,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 5rem;
+        gap: 1rem;
     }
+    .aboutInfo {
+        gap: 1.5rem;
+        max-width:90%;
+    }
+
     fieldset {
         width: 20rem;
         gap: 1rem;
@@ -397,7 +407,7 @@
 @media screen and (max-width: 375px) {
     .redesSociais{
         position: absolute;
-        top:13%;
+        top:20%;
         left: 2%;
     }
     .title {
@@ -410,12 +420,12 @@
         font-size: 1.1rem;
         letter-spacing: 1.3px;
     }
-    .start {
-        margin: 0;
+    .contentStart h1 {
+        font-size: 1.65rem;
+
     }
     .divPhoto img {
         max-width: 230px;
-        margin-top: 1rem;
     }
     fieldset {
         width: 18rem;
@@ -451,7 +461,6 @@
     .redesSociais{
         position: absolute;
         font-size: 1.5rem;
-        top:12%;
         left: 2%;
     }
     .contentStart h1 {
