@@ -371,6 +371,10 @@
     .linkIcons i {
         font-size: 2rem;
     }
+    #projects li:hover .links {
+        display: flex;
+        flex-direction: row;
+    }
     .projeto h3 {
         font-size: 1.2rem;
     }
@@ -381,6 +385,7 @@
         gap: 1rem;
     }
     .descricao {
+        top: 40%;
         font-size: 1.2rem;
         font-weight: 500;
     }
