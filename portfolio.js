@@ -2,6 +2,7 @@ let light = getComputedStyle(document.documentElement).getPropertyValue('--light
 let body = document.getElementById("body");
 const theme = document.getElementById("theme");
 const navMenu = document.getElementById("navMenu")
+const navLink = document.querySelectorAll(".navLink")
 const navToggle = document.getElementById("nav-toggle")
 const li_s = document.querySelectorAll(".itemNav")
 
@@ -21,6 +22,16 @@ theme.addEventListener('click', () => {
     }
 });
 
+const reloadPage = () => {
+    navLink.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add("activeClass")
+        } else {
+            link.classList.remove("activeClass")
+        }      
+    })
+}
+
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('show-menu')
     if (navMenu.classList.contains('show-menu') === true) {
@@ -39,3 +50,5 @@ Array.from(li_s).forEach((li) => {
         navToggle.style.transform = "scale(1)";
     });
 });
+
+window.addEventListener('scroll', reloadPage)

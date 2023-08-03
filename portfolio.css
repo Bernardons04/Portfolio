@@ -68,8 +68,13 @@ nav a {
     text-decoration: none;
     color: var(--light);
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     transition: 0.4s ease-in-out;
+}
+
+.activeClass {
+    color: var(--third-color);
+    border-bottom: solid 4px var(--third-color);
 }
 
 nav a::after {
@@ -78,7 +83,7 @@ nav a::after {
     height: 4px;
     background-color: var(--third-color);
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     transition: 0.4s ease-in-out;
 }
