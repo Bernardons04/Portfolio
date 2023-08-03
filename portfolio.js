@@ -1,5 +1,6 @@
 let light = getComputedStyle(document.documentElement).getPropertyValue('--light');
 let body = document.getElementById("body");
+let section = document.querySelectorAll('section[id]')
 const theme = document.getElementById("theme");
 const navMenu = document.getElementById("navMenu")
 const navLink = document.querySelectorAll(".navLink")
@@ -22,16 +23,6 @@ theme.addEventListener('click', () => {
     }
 });
 
-const reloadPage = () => {
-    navLink.forEach(link => {
-        if (link.href === window.location.href) {
-            link.classList.add("activeClass")
-        } else {
-            link.classList.remove("activeClass")
-        }      
-    })
-}
-
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('show-menu')
     if (navMenu.classList.contains('show-menu') === true) {
@@ -51,4 +42,19 @@ Array.from(li_s).forEach((li) => {
     });
 });
 
-window.addEventListener('scroll', reloadPage)
+window.onscroll = () =>{
+    const scrollY2 = window.scrollY;
+
+    section.forEach(sec => {
+        let offsetTop = sec.offsetTop - 58;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        const sectionClass = document.querySelector('.itemNav a[href*=' + id + ']')
+        
+        if (scrollY2 > offsetTop && scrollY2 <= offsetTop + height) {
+            sectionClass.classList.add('activeClass')
+        } else {
+            sectionClass.classList.remove('activeClass')
+        }
+    })
+}
