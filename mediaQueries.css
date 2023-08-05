@@ -99,14 +99,12 @@
 /*Tela Tablet*/
 @media screen and (max-width: 768px) {
     .navLink {
-        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 0.9rem;
         color: var(--light);
         font-weight: 500;
-        margin: 0 auto;
     }
     header {
         position: fixed;
@@ -116,6 +114,7 @@
         justify-content: space-between;
         padding: 10px 20px 5px 20px;
     }
+
     .menuIcon {
         display: block;
     }
@@ -133,18 +132,20 @@
         border-bottom: solid 3px var(--main-color);
         padding: 2rem 1.5rem 2rem;
         border-radius: 0 0 1rem 1rem;
-        justify-content: center;  
+        justify-content: center;
     }
-    .activeClass {
-        color: var(--third-color);
-        border-bottom: solid 4px var(--third-color);
+    nav a::after {
+        left: 35%;
     }
+    
+    nav a:hover::after {
+        width: 30%;
+    }
+    
     .navList {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
-        width: 30%;
-        margin: 0 auto;
     }
 
     .contentStart p {
