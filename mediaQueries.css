@@ -99,12 +99,14 @@
 /*Tela Tablet*/
 @media screen and (max-width: 768px) {
     .navLink {
+        width: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 0.9rem;
         color: var(--light);
         font-weight: 500;
+        margin: 0 auto;
     }
     header {
         position: fixed;
@@ -134,14 +136,10 @@
         border-radius: 0 0 1rem 1rem;
         justify-content: center;
     }
-    nav a::after {
-        left: 35%;
+    .activeClass {
+        color: var(--third-color);
+        border-bottom: solid 4px var(--third-color);
     }
-    
-    nav a:hover::after {
-        width: 30%;
-    }
-    
     .navList {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
