@@ -99,7 +99,7 @@
 /*Tela Tablet*/
 @media screen and (max-width: 768px) {
     .navLink {
-        width: 40%;
+        width: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -302,6 +302,9 @@
     .aboutInfo {
         max-width:80%;
     }
+    .navLink {
+        width: 20%;
+    }
 }
 
 /*Tela Pequena*/
@@ -399,6 +402,9 @@
     }
     #footer a i {
         font-size: 1.5rem;
+    }
+    .navLink {
+        width: 25%;
     }
 }
 

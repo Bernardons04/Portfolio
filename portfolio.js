@@ -13,13 +13,11 @@ theme.addEventListener('click', () => {
         body.style.setProperty("--dark", "#FCFBFF");
         theme.innerHTML = `<i class="uil uil-sun"></i>`
         light = "#020617";
-        console.log(light)
     } else {
         body.style.setProperty("--light", "#FCFBFF");
         body.style.setProperty("--dark", "#020617");
         theme.innerHTML = `<i class="uil uil-moon"></i>`
         light = "#FCFBFF";
-        console.log(light)
     }
 });
 
