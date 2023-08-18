@@ -336,7 +336,10 @@ section {
 #technologies ul {
     display: flex;
     list-style: none;
-    gap: 10rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
 }
 
 #technologies li {
@@ -353,17 +356,17 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     z-index: 12;
 }
 
 #technologies svg {
-    font-size: 10rem;
+    font-size: 9rem;
     color: #a29ea4;
 }
 
 #technologies li:hover svg{
-    filter: blur(9px);
+    filter: blur(6px);
 }
 
 #technologies li:hover h3 {
