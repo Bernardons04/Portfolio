@@ -708,7 +708,9 @@ fieldset button:hover {
     padding: 10px;
     font-weight: 600;
 }
-
+.imgContact {
+    height: 450px;
+}
 #footer i {
     font-size: 1.7rem;
     color: var(--light);
