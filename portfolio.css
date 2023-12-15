@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
-    --light: #fcfbff;
-    --dark: #151515;
+    --light: #FCFBFF;
+    --dark: #020617;
     --main-color: #075fe4;
     --second-color: #5354c1;
     --third-color: #00D9FF;
@@ -127,18 +127,8 @@ header {
     align-items: center;
     padding-top: 6px;
     gap: 20%;
-    z-index: 100;
-}
-
-.headerRoll::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: var(--dark);
-    top: 0;
-    left: 0;
-    z-index: -1;
+    z-index: 100;
 }
 
 #nav-close {
@@ -410,16 +400,10 @@ section {
 
 .aboutInfo {
     display: flex;
-    font-family: Poppins;
     flex-direction: column;
     align-items: start;
-    gap: 1rem;
+    gap: 3rem;
     max-width: 35%;
-}
-
-.aboutInfo h2 {
-    font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 .aboutInfo p {
@@ -580,10 +564,6 @@ strong {
     flex-direction: column;
     align-items: start;
     gap: 4rem;
-}
-
-.imgContact {
-    max-width: 550px;
 }
 
 #inContact {
