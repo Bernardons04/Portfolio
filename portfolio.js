@@ -40,6 +40,11 @@ Array.from(li_s).forEach((li) => {
     });
 });
 
+window.addEventListener("scroll", () => {
+    let header = document.querySelector("#header")
+    header.classList.toggle('headerRoll', window.scrollY > 0)
+})
+
 window.onscroll = () =>{
     const scrollY2 = window.scrollY;
 
