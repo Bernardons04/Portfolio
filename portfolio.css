@@ -417,6 +417,8 @@ section {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #projects li:hover img{
@@ -708,9 +710,7 @@ fieldset button:hover {
     padding: 10px;
     font-weight: 600;
 }
-.imgContact {
-    height: 450px;
-}
+
 #footer i {
     font-size: 1.7rem;
     color: var(--light);
