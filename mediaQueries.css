@@ -15,7 +15,33 @@
         font-size: 1.2rem;
         font-weight: 500;
     }
+    .arrow-start {
+        display: none;
+    }
 }
+@media screen and (max-width: 1250px) {
+    .boxImages {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 350%;
+    }
+    .projectImgs {
+        filter: grayscale(80%);
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .projectImgs:hover {
+        width: 105%;
+        filter: grayscale(0%);
+        box-shadow: 0 0 70px var(--main-color), inset 0 0 80px var(--main-color);
+    }
+}
+
 
 @media screen and (max-width: 1046px) {
     .contentStart h1 {
@@ -308,6 +334,27 @@
     .navLink {
         width: 20%;
     }
+    .boxImages {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 350%;
+    }
+    .projectImgs {
+        filter: grayscale(80%);
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .projectImgs:hover {
+        width: 105%;
+        filter: grayscale(0%);
+        box-shadow: 0 0 70px var(--main-color), inset 0 0 80px var(--main-color);
+    }
+
 }
 
 /*Tela Pequena*/
