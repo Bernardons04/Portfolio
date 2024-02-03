@@ -22,23 +22,21 @@
 @media screen and (max-width: 1250px) {
     .boxImages {
         padding-top: 30px;
-        display: flex;
         flex-direction: column;
-        gap: 10px;
-        margin-bottom: 350%;
+        gap: 25px;
+        margin-bottom: 280%;
     }
     .projectImgs {
-        filter: grayscale(80%);
-        object-fit: cover;
         width: 100%;
         height: 100%;
-        border-radius: 10px;
-        cursor: pointer;
     }
-    .projectImgs:hover {
-        width: 105%;
-        filter: grayscale(0%);
+    .projectImgsLinks:hover .projectImgs {
         box-shadow: 0 0 70px var(--main-color), inset 0 0 80px var(--main-color);
+    }
+    .projectImgsLinks:hover .projectImgs {
+        width: 103%;
+        height: 103%;
+        z-index: 50;
     }
 }
 
@@ -47,6 +45,7 @@
     .contentStart h1 {
         font-size: 2.5rem;
     }
+    .tecnologias {}
 }
 
 @media screen and (max-width: 1024px) {
@@ -99,7 +98,7 @@
         gap: 1rem;
     }
     fieldset {
-        width: 23rem;
+        width: 50rem;
         gap: 1rem;
     }
     .contato span {
@@ -233,6 +232,9 @@
     .downloadCv {
         max-width: 60%;
     }
+    fieldset{
+        width: 40rem;
+    }
 }
 
 @media screen and (max-width: 740px) { 
@@ -250,9 +252,11 @@
         margin-top: -3rem;
         padding: 0;
     }
+    .contentStart {
+        align-items: center
+    };
     .contentStart p {
-        font-size: 1rem;
-        
+        font-size: 1rem
     }
     .contentStart {
         max-width: 100%;
@@ -284,7 +288,7 @@
         gap: 1rem;
     }
     fieldset {
-        width: 30rem;
+        width: 40rem;
         gap: 1rem;
     }
     .allProjects {
@@ -317,6 +321,29 @@
     .contactSection {
         align-items: center;
     }
+    fieldset {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tecnologias {
+        display: none;
+    }
+
+    .links {
+        right: 0;
+        margin-right: 1rem;
+        bottom: 60%;
+        margin-left: 1rem;
+    }
+
+    .linkIcons i {
+        color: var(--third-color);
+    }
+    fieldset {
+        width: 35rem;
+    }
 }
 
 @media screen and (max-width: 525px) {
@@ -339,22 +366,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin-bottom: 350%;
     }
-    .projectImgs {
-        filter: grayscale(80%);
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        cursor: pointer;
+    fieldset {
+        width: 30rem;
     }
-    .projectImgs:hover {
-        width: 105%;
-        filter: grayscale(0%);
-        box-shadow: 0 0 70px var(--main-color), inset 0 0 80px var(--main-color);
-    }
-
 }
 
 /*Tela Pequena*/
@@ -377,6 +392,11 @@
     }
     .contentStart p {
         font-size: .9rem;
+        text-align: center;
+    }
+    .contentStart h2 {
+        font-size: .9rem;
+        text-align: center;
     }
     .divPhoto img {
         max-width: 300px;
@@ -386,9 +406,6 @@
     }
     .title:before {
         font-size: 45px;
-    }
-    #technologies svg {
-        font-size: 7rem;
     }
     .aboutPhoto img {
         width: 260px;
@@ -406,7 +423,7 @@
     }
 
     fieldset {
-        width: 20rem;
+        width: 25rem;
         gap: 1rem;
     }
     .contactSection {
@@ -427,9 +444,7 @@
         font-size: 1.05rem;
     }
     .links {
-        display: flex;
-        flex-direction: column;
-        bottom: 10px;
+        bottom: 40px;
         right: -10px;
     }
     .linkIcons i {
@@ -488,7 +503,7 @@
         max-width: 230px;
     }
     fieldset {
-        width: 18rem;
+        width: 20rem;
     }
     .contato span {
 
