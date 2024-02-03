@@ -370,6 +370,10 @@
     fieldset {
         width: 30rem;
     }
+    #projects h2 {
+        font-size: 25px;
+    }
+    
 }
 
 /*Tela Pequena*/
@@ -473,6 +477,9 @@
     }
     .navLink {
         width: 25%;
+    }
+    #projects h2 {
+        font-size: 22px;
     }
 }
 
