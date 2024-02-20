@@ -63,8 +63,7 @@
         font-size: 1.9rem;
     }
     .contentStart h2 {
-        font-size: 1.2rem;
-        letter-spacing: 1.5px;
+        font-size: 25px;
     }
     .contentStart p {
         font-size: 1rem;
@@ -253,13 +252,11 @@
         padding: 0;
     }
     .contentStart {
-        align-items: center
-    };
-    .contentStart p {
-        font-size: 1rem
-    }
-    .contentStart {
+        align-items: center;
         max-width: 100%;
+    }
+    .contentStart p {
+        text-align: center;
     }
     nav {
         font-size: 18px;
@@ -399,7 +396,7 @@
         text-align: center;
     }
     .contentStart h2 {
-        font-size: .9rem;
+        font-size: 22px;
         text-align: center;
     }
     .divPhoto img {
@@ -499,12 +496,14 @@
         font-size: 40px;
     }
     .contentStart h2 {
-        font-size: 1.1rem;
-        letter-spacing: 1.3px;
+        font-size: 22px;
     }
     .contentStart h1 {
         font-size: 1.65rem;
 
+    }
+    .contentStart p {
+        font-size: 14px;
     }
     .divPhoto img {
         max-width: 230px;

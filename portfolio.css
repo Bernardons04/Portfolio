@@ -215,17 +215,18 @@ header {
     border-right: 3px solid;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 5s steps(17, end) alternate infinite, 
-    blinking 0.3s step-end infinite alternate;
+    width: 20ch;
+    animation: typing 4s steps(20, end) alternate infinite, 
+    blinking 0.2s step-end infinite alternate;
 }
 
 @keyframes typing {
     0% {
         width: 0;
-    }
-    100% {
-        width: 19ch;
-    }
+      }
+      100% {
+        width: 18.7ch;
+      }
 }
 @keyframes blinking {
     50% {
@@ -237,7 +238,7 @@ header {
     margin-bottom: 2rem;
     font-size: 14.8px;
     max-width: 440px;
-    text-align: left;
+    text-align: start;
 }
 
 .redesSociais {
@@ -513,7 +514,9 @@ section {
 .linkIcons i {
     font-size: 40px;
     margin: 5px;
-    color: #fff;
+    color: var(--main-color);
+    border: solid 2px var(--main-color);
+    border-radius: 50%;
     cursor: pointer;
     padding: 0 6px;
     transition: .2s ease-in-out;
