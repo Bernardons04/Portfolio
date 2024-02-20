@@ -334,10 +334,6 @@
         bottom: 60%;
         margin-left: 1rem;
     }
-
-    .linkIcons i {
-        color: var(--third-color);
-    }
     fieldset {
         width: 35rem;
     }
