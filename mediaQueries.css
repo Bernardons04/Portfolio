@@ -1,5 +1,6 @@
 /*Tela Maior*/
 @media screen and (max-width: 1440px) {
+
     .divPhoto img {
         max-width: 400px;
     }
@@ -45,7 +46,6 @@
     .contentStart h1 {
         font-size: 2.5rem;
     }
-    .tecnologias {}
 }
 
 @media screen and (max-width: 1024px) {
@@ -55,18 +55,10 @@
     .imgContact {
         height: 380px;
     }
-    .logoBernardo {
-        width: 60px;
-        transition: .3s;
-    }
-    .contentStart h1 {
-        font-size: 1.9rem;
-    }
-    .contentStart h2 {
-        font-size: 25px;
+    .divLogoBernardo {
+        height: 60px;
     }
     .contentStart p {
-        font-size: 1rem;
         margin-bottom: 2rem;
     }
     .divPhoto img {
@@ -118,13 +110,14 @@
         cursor: pointer;
         border: solid 3px var(--second-color);
     }
-    .start {
-        padding-top: 2rem;
-    }
 }
 
 /*Tela Tablet*/
 @media screen and (max-width: 768px) {
+    .bgAnimation {
+        grid-template-columns: repeat(15,1fr);
+        grid-template-rows: repeat(26.6666666667,1fr);
+    }
     .navLink {
         width: 15%;
         display: flex;
@@ -135,13 +128,10 @@
         font-weight: 500;
         margin: 0 auto;
     }
-    header {
-        position: fixed;
-        top: 0;
-        display: flex;
-        align-items: center;
+    .headerContainer {
         justify-content: space-between;
         padding: 10px 20px 5px 20px;
+        gap: 0;
     }
 
     .menuIcon {
@@ -192,8 +182,8 @@
         display: block;
     }
  
-    .logoBernardo {
-        width: 50px;
+    .divLogoBernardo {
+        height: 50px;
         transition: .3s;
     }
 
@@ -237,14 +227,6 @@
 }
 
 @media screen and (max-width: 740px) { 
-    /*A partir daqui o main quebra*/
-    .start {
-        display: flex;
-        flex-direction: column-reverse;
-
-        gap: 0;
-        margin-top: 6rem;
-    }
     .divPhoto img {
         max-width: 300px;
         margin: 0;
@@ -254,6 +236,7 @@
     .contentStart {
         align-items: center;
         max-width: 100%;
+        margin: 0;
     }
     .contentStart p {
         text-align: center;
@@ -263,15 +246,6 @@
     }
     .homeScrlBtn {
         display: none;
-    }
-    .redesSociais{
-        position: absolute;
-        top:25%;
-        left: 5%;
-    }
-    .logoBernardo {
-        width: 50px;
-        transition: .3s;
     }
     .homeScrlBtn {
         margin-top: 2rem;
@@ -327,7 +301,6 @@
     .tecnologias {
         display: none;
     }
-
     .links {
         right: 0;
         margin-right: 1rem;
@@ -371,15 +344,6 @@
 
 /*Tela Pequena*/
 @media screen and (max-width: 425px) {
-    .logoBernardo {
-        width: 50px;
-        transition: .3s;
-    }
-    .redesSociais{
-        position: absolute;
-        top:20%;
-        left: 2%;
-    }
     .imgContact {
         height: 300px;
     }
@@ -477,11 +441,6 @@
 }
 
 @media screen and (max-width: 375px) {
-    .redesSociais{
-        position: absolute;
-        top:20%;
-        left: 2%;
-    }
     .imgContact {
         height: 260px;
     }
@@ -537,11 +496,6 @@
     }
     .imgContact {
         height: 220px;
-    }
-    .redesSociais{
-        position: absolute;
-        font-size: 1.5rem;
-        left: 2%;
     }
     .contentStart h1 {
         font-size: 1.6rem;

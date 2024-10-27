@@ -14,48 +14,50 @@
 </head>
 
 <body id="body">
-    <header>
-        <div>
-            <img class="logoBernardo" src="images/LogoBernardo.png">
-        </div>
-        <div class="divLeft">
-            <div id="navMenu">
-                <nav class="navList">
-                    <li class="itemNav">
-                        <a href="#inicio" class="navLink">
-                            <i class="uil uil-estate menuIcon"></i>Início
-                        </a>
-                    </li>
-                    <li class="itemNav">
-                        <a href="#about" class="navLink">
-                            <i class="uil uil-user menuIcon"></i>Sobre
-                        </a>
-                    </li>
-                    <li class="itemNav">
-                        <a href="#technologies" class="navLink">
-                            <i class="uil uil-atom menuIcon"></i>Tecnologias
-                        </a>
-                    </li>
-                    <li class="itemNav">
-                        <a href="#projects" class="navLink">
-                            <i class="uil uil-browser menuIcon"></i>Projetos
-                        </a>
-                    </li>
-                    <li class="itemNav">
-                        <a href="#inContact" class="navLink">
-                            <i class="uil uil-message menuIcon"></i>Contato
-                        </a>
-                    </li>
-                </nav>
+    <header id="header">
+        <div class="headerContainer">
+            <div class="divLogoBernardo" style="height: 70px;">
+                <img class="logoBernardo" src="images/LogoBernardo.png">
             </div>
-            <div class="icons">
-                <div class="light-dark">
-                    <button id="theme">
-                        <i class="uil uil-moon"></i>
-                    </button>
+            <div class="divLeft">
+                <div id="navMenu">
+                    <nav class="navList">
+                        <li class="itemNav">
+                            <a href="#inicio" class="navLink">
+                                <i class="uil uil-estate menuIcon"></i>Início
+                            </a>
+                        </li>
+                        <li class="itemNav">
+                            <a href="#about" class="navLink">
+                                <i class="uil uil-user menuIcon"></i>Sobre
+                            </a>
+                        </li>
+                        <li class="itemNav">
+                            <a href="#technologies" class="navLink">
+                                <i class="uil uil-atom menuIcon"></i>Tecnologias
+                            </a>
+                        </li>
+                        <li class="itemNav">
+                            <a href="#projects" class="navLink">
+                                <i class="uil uil-browser menuIcon"></i>Projetos
+                            </a>
+                        </li>
+                        <li class="itemNav">
+                            <a href="#inContact" class="navLink">
+                                <i class="uil uil-message menuIcon"></i>Contato
+                            </a>
+                        </li>
+                    </nav>
                 </div>
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
+                <div class="icons">
+                    <div class="light-dark">
+                        <button id="theme">
+                            <i class="uil uil-moon"></i>
+                        </button>
+                    </div>
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,13 +70,10 @@
     </div>
 
     <section class="start" id="inicio">
-        <div class="redesSociais">
-            <a href="https://www.linkedin.com/in/bernardoaraujonascimento/" target="_blank">
-                <i class="uil uil-linkedin"></i>
-            </a>
-            <a href="https://github.com/Bernardons04" target="_blank">
-                <i class="uil uil-github"></i>
-            </a>
+        <div class="bgAnimation" id="bgAnimation">
+            <div class="backgroundAmim">
+
+            </div>
         </div>
         <div class="divMain">
             <div class="contentStart">
@@ -84,12 +83,18 @@
                 <h2>
                     Desenvolvedor Front-end
                 </h2>
+                <div class="redesSociais">
+                    <a href="https://www.linkedin.com/in/bernardoaraujonascimento/" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Bernardons04" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </div>
                 <p>
-                    Seja muito bem-vindo(a)! Sou um aspirante a desenvolvedor front-end apaixonado por criar
-                    experiências digitais iradas! <br>
+                    Desenvolvedor apaixonado por criar experiências digitais iradas! <br>
                     Neste espaço você encontrará alguns dos projetos que eu desenvolvi e também as tecnologias que
-                    possuo domínio. <br>
-                    Sinta-se à vontade para vasculhar o meu portfólio e entrar em contato comigo!
+                    possuo domínio.
                 </p>
                 <a href="#inContact" class="contact btnFlex">
                     Contato
@@ -104,9 +109,11 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="divPhoto">
             <img src="images/fotoInicio.png" alt="">
         </div>
+        -->
     </section>
 
     <section id="about">
@@ -120,14 +127,17 @@
                     Um pouco sobre mim...
                 </h2>
                 <p>
-                    Me chamo <strong>Bernardo Araujo</strong>, tenho 20 anos e, estou cursando
+                    Me chamo <strong>Bernardo Araujo</strong>, tenho 20 anos e estou cursando
                     <strong>Ciência da Computação</strong> na Universidade São Judas Tadeu, em Santos-SP. <br>
-                    Atualmente estou altamente focado em me especializar cada vez mais na área de
-                    Desenvolvimento Front-End, motivado pelo meu gosto por <strong>lógica</strong>,
-                    <strong>design</strong> e <strong>resolução de problemas</strong>. <br>
-                    Meu repertório inclui <strong>ReactJS</strong>, <strong>JavaScript</strong>,
-                    <strong>HTML</strong>, <strong>CSS</strong>, <strong>Git/GitHub</strong>
-                    e boas noções de <strong>UX/UI Design</strong>.
+                    Atualmente, sou estagiário na <strong>T2S Tecnologia</strong>, onde trabalho com
+                    <strong>Vue.js</strong>,
+                    <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e
+                    <strong>Bootstrap</strong> em projetos reais,
+                    desenvolvendo páginas web intuitivas e responsivas. <br>
+                    Sou apaixonado por <strong>lógica</strong>, <strong>design</strong> e <strong>resolução de
+                        problemas</strong>, tenho conhecimentos em <strong>Git/GitHub</strong> e boas noções
+                    de <strong>UX/UI Design</strong>.
+                    <!-- Explore meus projetos no portfólio e sinta-se à vontade para entrar em contato! -->
                 </p>
                 <a href="https://drive.google.com/file/d/1za_TIC0QqBiT576jYs4NcErfZAp1U4_p/view?usp=drive_link"
                     target="_blank" class="downloadCv">
@@ -143,63 +153,137 @@
         <h1 class="title" titulo="Tecnologias">Tecnologias</h1>
         <ul>
             <li>
-                <span class="span">
-                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                        stroke-linejoin="round" class="imgSkill" height="1em" width="1em"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
-                        <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
-                    </svg>
-                </span>
+                <svg class="span" viewBox="0 -17.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"
+                    height="1em" width="1em">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path d="M204.8,0 L256,0 L128,220.8 L0,0 L50.56,0 L97.92,0 L128,51.2 L157.44,0 L204.8,0 Z"
+                                fill="#41B883"> </path>
+                            <path d="M0,0 L128,220.8 L256,0 L204.8,0 L128,132.48 L50.56,0 L0,0 Z" fill="#41B883">
+                            </path>
+                            <path d="M50.56,0 L128,133.12 L204.8,0 L157.44,0 L128,51.2 L97.92,0 L50.56,0 Z"
+                                fill="#35495E"> </path>
+                        </g>
+                    </g>
+                </svg>
+                <h3>VueJS</h3>
+            </li>
+
+            <li>
+                <svg class="span" xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img"
+                    viewBox="0 0 512 512" height="1em" width="1em" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>
+                        <path
+                            d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z">
+                        </path>
+                    </g>
+                </svg>
+                <h3>JavaScript</h3>
+            </li>
+
+            <li>
+                <svg class="span" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" height="1em"
+                    width="1em" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid"
+                    fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path
+                                d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z"
+                                fill="#563D7C"> </path>
+                            <path
+                                d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z"
+                                fill="#FFFFFF"> </path>
+                        </g>
+                    </g>
+                </svg>
+                <h3>Bootstrap</h3>
+            </li>
+
+            <li>
+                <svg class="span" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000" height="1em"
+                    width="1em">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>file_type_html</title>
+                        <polygon points="5.902 27.201 3.655 2 28.345 2 26.095 27.197 15.985 30 5.902 27.201"
+                            style="fill:#e44f26"></polygon>
+                        <polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#f1662a">
+                        </polygon>
+                        <polygon
+                            points="16 13.407 11.91 13.407 11.628 10.242 16 10.242 16 7.151 15.989 7.151 8.25 7.151 8.324 7.981 9.083 16.498 16 16.498 16 13.407"
+                            style="fill:#ebebeb"></polygon>
+                        <polygon
+                            points="16 21.434 15.986 21.438 12.544 20.509 12.324 18.044 10.651 18.044 9.221 18.044 9.654 22.896 15.986 24.654 16 24.65 16 21.434"
+                            style="fill:#ebebeb"></polygon>
+                        <polygon
+                            points="15.989 13.407 15.989 16.498 19.795 16.498 19.437 20.507 15.989 21.437 15.989 24.653 22.326 22.896 22.372 22.374 23.098 14.237 23.174 13.407 22.341 13.407 15.989 13.407"
+                            style="fill:#fff"></polygon>
+                        <polygon
+                            points="15.989 7.151 15.989 9.071 15.989 10.235 15.989 10.242 23.445 10.242 23.445 10.242 23.455 10.242 23.517 9.548 23.658 7.981 23.732 7.151 15.989 7.151"
+                            style="fill:#fff"></polygon>
+                    </g>
+                </svg>
                 <h3>HTML5</h3>
             </li>
 
             <li>
-                <span class="span">
-                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                        stroke-linejoin="round" class="imgSkill" height="1em" width="1em"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
-                        <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
-                    </svg>
-                </span>
+                <svg class="span" viewBox="0 0 32 32" fill="none" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
+                        <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
+                        <path
+                            d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                            fill="white"></path>
+                    </g>
+                </svg>
                 <h3>CSS3</h3>
             </li>
-            <li>
-                <span class="span">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32"
-                        class="imgSkill" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z">
 
-                        </path>
-                    </svg>
-                </span>
-                <h3>JavaScript</h3>
-            </li>
             <li>
-                <span class="span">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                        class="imgSkill" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <svg class="span" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em"
+                    width="1em">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
                         <path
-                            d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z">
-                        </path>
-                    </svg>
-                </span>
+                            d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
+                            fill="#53C1DE"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
+                            fill="#53C1DE"></path>
+                    </g>
+                </svg>
                 <h3>ReactJS</h3>
             </li>
+
             <li>
-                <span class="span">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="imgSkill"
-                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <svg class="span" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em"
+                    width="1em">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
                         <path
-                            d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457">
-                        </path>
-                    </svg>
-                </span>
+                            d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z"
+                            fill="#EE513B"></path>
+                        <path
+                            d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z"
+                            fill="white"></path>
+                    </g>
+                </svg>
                 <h3>Git</h3>
+            </li>
         </ul>
     </section>
 
@@ -211,17 +295,19 @@
                 <img src="images/InterfaceTechCosts.png" class="projectImgs" />
                 <div class="container">
                     <div class="tecnologias">
-                        <img src="https://skillicons.dev/icons?i=react"/>
-                        <img src="https://skillicons.dev/icons?i=nodejs"/>
-                        <img src="https://skillicons.dev/icons?i=js"/>
-                        <img src="https://skillicons.dev/icons?i=html"/>
-                        <img src="https://skillicons.dev/icons?i=css"/>
+                        <img src="https://skillicons.dev/icons?i=react" />
+                        <img src="https://skillicons.dev/icons?i=nodejs" />
+                        <img src="https://skillicons.dev/icons?i=js" />
+                        <img src="https://skillicons.dev/icons?i=html" />
+                        <img src="https://skillicons.dev/icons?i=css" />
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Bernardons04/GerenciadorDeProjetos" class="github linkIcons" target="_blank">
+                        <a href="https://github.com/Bernardons04/GerenciadorDeProjetos" class="github linkIcons"
+                            target="_blank">
                             <i class="uil uil-github"></i>
                         </a>
-                        <a href="https://gerenciador-de-projetos-gilt.vercel.app/" class="deploy linkIcons" target="_blank">
+                        <a href="https://gerenciador-de-projetos-gilt.vercel.app/" class="deploy linkIcons"
+                            target="_blank">
                             <i class="uil uil-eye"></i>
                         </a>
                     </div>
@@ -232,15 +318,17 @@
                 <img src="images/InterfaceLandingPage-T2S.png" class="projectImgs" />
                 <div class="container">
                     <div class="tecnologias">
-                        <img src="https://skillicons.dev/icons?i=js"/>
-                        <img src="https://skillicons.dev/icons?i=html"/>
-                        <img src="https://skillicons.dev/icons?i=css"/>
+                        <img src="https://skillicons.dev/icons?i=js" />
+                        <img src="https://skillicons.dev/icons?i=html" />
+                        <img src="https://skillicons.dev/icons?i=css" />
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Bernardons04/DesafioLandingPageT2S" class="github linkIcons" target="_blank">
+                        <a href="https://github.com/Bernardons04/DesafioLandingPageT2S" class="github linkIcons"
+                            target="_blank">
                             <i class="uil uil-github"></i>
                         </a>
-                        <a href="https://desenvolvimentodesistemas-t2s.netlify.app/" class="deploy linkIcons" target="_blank">
+                        <a href="https://desenvolvimentodesistemas-t2s.netlify.app/" class="deploy linkIcons"
+                            target="_blank">
                             <i class="uil uil-eye"></i>
                         </a>
                     </div>
@@ -251,13 +339,14 @@
                 <img src="images/ListaDeTarefas.png" class="projectImgs" />
                 <div class="container">
                     <div class="tecnologias">
-                        <img src="https://skillicons.dev/icons?i=react"/>
-                        <img src="https://skillicons.dev/icons?i=js"/>
-                        <img src="https://skillicons.dev/icons?i=html"/>
-                        <img src="https://skillicons.dev/icons?i=css"/>
+                        <img src="https://skillicons.dev/icons?i=react" />
+                        <img src="https://skillicons.dev/icons?i=js" />
+                        <img src="https://skillicons.dev/icons?i=html" />
+                        <img src="https://skillicons.dev/icons?i=css" />
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Bernardons04/lista-de-tarefas" class="github linkIcons" target="_blank">
+                        <a href="https://github.com/Bernardons04/lista-de-tarefas" class="github linkIcons"
+                            target="_blank">
                             <i class="uil uil-github"></i>
                         </a>
                         <a href="https://listadetarefas-bernardo.netlify.app/" class="deploy linkIcons" target="_blank">
@@ -271,15 +360,17 @@
                 <img src="images/PrintTurismo.png" class="projectImgs">
                 <div class="container">
                     <div class="tecnologias">
-                        <img src="https://skillicons.dev/icons?i=html"/>
-                        <img src="https://skillicons.dev/icons?i=css"/>
-                        <img src="https://skillicons.dev/icons?i=js"/>
+                        <img src="https://skillicons.dev/icons?i=html" />
+                        <img src="https://skillicons.dev/icons?i=css" />
+                        <img src="https://skillicons.dev/icons?i=js" />
                     </div>
                     <div class="links">
-                        <a href="https://github.com/Bernardons04/AdventureTours" class="github linkIcons" target="_blank">
+                        <a href="https://github.com/Bernardons04/AdventureTours" class="github linkIcons"
+                            target="_blank">
                             <i class="uil uil-github"></i>
                         </a>
-                        <a href="https://bernardons04.github.io/AdventureTours/" class="deploy linkIcons" target="_blank">
+                        <a href="https://bernardons04.github.io/AdventureTours/" class="deploy linkIcons"
+                            target="_blank">
                             <i class="uil uil-eye"></i>
                         </a>
                     </div>
@@ -290,9 +381,9 @@
                 <img src="images/pokedex.png" class="projectImgs" />
                 <div class="container">
                     <div class="tecnologias">
-                        <img src="https://skillicons.dev/icons?i=html"/>
-                        <img src="https://skillicons.dev/icons?i=css"/>
-                        <img src="https://skillicons.dev/icons?i=js"/>
+                        <img src="https://skillicons.dev/icons?i=html" />
+                        <img src="https://skillicons.dev/icons?i=css" />
+                        <img src="https://skillicons.dev/icons?i=js" />
                     </div>
                     <div class="links">
                         <a href="https://github.com/Bernardons04/Pokedex" class="github linkIcons" target="_blank">

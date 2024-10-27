@@ -61,3 +61,18 @@ window.onscroll = () =>{
         }
     })
 }
+
+const bgAnimation = document.getElementById('bgAnimation');
+
+const numberOfColorBoxes = 400;
+
+for (let i = 0; i < numberOfColorBoxes; i++) {
+    const colorBox = document.createElement('div');
+    colorBox.classList.add('colorBox');
+    bgAnimation.append(colorBox)
+}
+
+window.addEventListener("scroll", () => {
+    let header = document.querySelector("#header")
+    header.classList.toggle('headerRoll', window.scrollY > 0)
+})

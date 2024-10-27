@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Mono:ital@0;1&display=swap');
 
 :root {
@@ -20,6 +20,50 @@
 html {
     scroll-behavior: smooth;
 }
+
+.bgAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: var(--dark);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.75);
+    position: relative;
+    margin: 2px;
+    background: var(--dark);
+    opacity: .5;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #075fe4a1;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
+
 
 .arrow-start img {
     width: 50px;
@@ -57,7 +101,7 @@ body {
 }
 
 .logoBernardo {
-    width: 70px;
+    height: 100%;
     cursor: pointer;
     transition: .3s;
 }
@@ -91,15 +135,15 @@ nav a {
 }
 
 .activeClass {
-    color: var(--third-color);
-    border-bottom: solid 4px var(--third-color);
+    color: var(--main-color);
+    border-bottom: solid 4px var(--main-color);
 }
 
 nav a::after {
     content: " ";
     width: 0%;
     height: 4px;
-    background-color: var(--third-color);
+    background-color: var(--main-color);
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -111,7 +155,7 @@ nav a:hover::after {
 }
 
 nav a:hover {
-    color: var(--third-color);
+    color: var(--main-color);
 }
 
 #navMenu {
@@ -138,15 +182,20 @@ nav a:hover {
 
 header {
     width: 100%;
-    margin: auto;
     position: fixed;
+    z-index: 10;
+}
+
+.headerContainer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 6px;
-    gap: 20%;
-    background-color: var(--dark);
+    padding: 10px 0;
     z-index: 100;
+}
+
+.headerRoll {
+    background-color: var(--dark);
 }
 
 #nav-close {
@@ -177,7 +226,7 @@ header {
 
 #theme:hover, .nav_toggle:hover {
     transform: scale(1.2);
-    color: var(--third-color);
+    color: var(--main-color);
 }
 
 .start {
@@ -187,25 +236,25 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
     gap: 3%;
 }
 .contentStart {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     color: var(--light);
     padding: 10px;
     margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contentStart h1 {
     font-size: 3rem;
+    font-weight: 800;
 }
 
 .contentStart h2 {
-    font-family: 'Jost', sans-serif;
     text-align: center;
     font-weight: bold;
     color: var(--main-color);
@@ -215,8 +264,8 @@ header {
     border-right: 3px solid;
     white-space: nowrap;
     overflow: hidden;
-    width: 20ch;
-    animation: typing 4s steps(20, end) alternate infinite, 
+    width: 22ch;
+    animation: typing 4s steps(22, end) alternate infinite, 
     blinking 0.2s step-end infinite alternate;
 }
 
@@ -225,7 +274,7 @@ header {
         width: 0;
       }
       100% {
-        width: 18.7ch;
+        width: 22ch;
       }
 }
 @keyframes blinking {
@@ -236,16 +285,14 @@ header {
 
 .contentStart p {
     margin-bottom: 2rem;
-    font-size: 14.8px;
-    max-width: 440px;
-    text-align: start;
+    font-size: 18px;
+    color: var(--light);
+    font-weight: 500;
 }
 
 .redesSociais {
-    display: grid;
-    grid-template-columns: max-content;
-    row-gap: 1rem;
-    padding: 0 5px;
+    display: flex;
+    gap: 15px;
 }
 
 .divPhoto img {
@@ -256,14 +303,13 @@ header {
 
 .redesSociais a i {
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--light);
+    transition: 0.4s ease-in-out;
 }
 
 .redesSociais a i:hover, 
 .redesSociais a:hover {
-    color: var(--third-color);
-    transition: 0.2s ease-in-out;
-    transform: scale(1.1);
+    color: var(--main-color);
 }
 
 .contact {
@@ -281,6 +327,11 @@ header {
     background-color: #003b94;
     transition: .3s;
 }
+
+.contact:active {
+    transform: scale(0.90);
+}
+
 .btnFlex {
     display: inline-flex;
     align-items: center;
@@ -357,7 +408,7 @@ section {
     list-style: none;
     gap: 5rem;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 70%;
     justify-content: center;
 }
 
@@ -367,6 +418,7 @@ section {
     flex-direction: column;
     cursor: pointer;
     border: solid 4px transparent;
+    padding: 8px;
 }
 
 #technologies h3 {
@@ -389,7 +441,7 @@ section {
 }
 
 #technologies li:hover h3 {
-    color: var(--light);
+    color: #000;
 }
 
 #technologies li:hover {
@@ -501,7 +553,6 @@ section {
     height: 30%;
     z-index: 25;
     visibility: hidden;
-    transition: .4s;
 }
 
 .linkIcons i:hover{
