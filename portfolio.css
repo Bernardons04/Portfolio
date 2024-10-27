@@ -435,7 +435,7 @@ section {
     font-size: 9rem;
     color: #a29ea4;
 }
-
+/*
 #technologies li:hover svg{
     filter: blur(6px);
 }
@@ -449,7 +449,7 @@ section {
     border-radius: 1rem;
     box-shadow: 0 0 10px 2px var(--third-color);
 }
-
+*/
 #about {
     display: flex;
     flex-direction: column;
