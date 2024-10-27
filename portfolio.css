@@ -250,7 +250,7 @@ header {
 }
 
 .contentStart h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
 }
 
@@ -259,7 +259,7 @@ header {
     font-weight: bold;
     color: var(--main-color);
     text-shadow: 0 0 15px var(--main-color);
-    font-size: 30px;
+    font-size: 42px;
     padding-bottom: 10px;
     border-right: 3px solid;
     white-space: nowrap;
