@@ -6,6 +6,9 @@ const navMenu = document.getElementById("navMenu")
 const navLink = document.querySelectorAll(".navLink")
 const navToggle = document.getElementById("nav-toggle")
 const li_s = document.querySelectorAll(".itemNav")
+let header = document.querySelector("#header")
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+let isMenuActive = false;
 
 theme.addEventListener('click', () => {
     if (light === "#FCFBFF") {
@@ -22,13 +25,22 @@ theme.addEventListener('click', () => {
 });
 
 navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('show-menu')
-    if (navMenu.classList.contains('show-menu') === true) {
-        navToggle.style.color = "var(--third-color)"
-        navToggle.style.transform = "scale(1.3)";
+    navMenu.classList.toggle('show-menu');
+    isMenuActive = navMenu.classList.contains('show-menu');
+
+    navToggle.style.color = isMenuActive ? "var(--third-color)" : "var(--light)";
+    navToggle.style.transform = isMenuActive ? "scale(1.3)" : "scale(1)";
+
+    if (isMenuActive) {
+        header.classList.add('headerRoll');
     } else {
-        navToggle.style.color = "var(--light)"
-        navToggle.style.transform = "scale(1)";
+        header.classList.toggle('headerRoll', window.scrollY > 0);
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (!isMenuActive) {
+        header.classList.toggle('headerRoll', window.scrollY > 0);
     }
 });
 
@@ -40,12 +52,7 @@ Array.from(li_s).forEach((li) => {
     });
 });
 
-window.addEventListener("scroll", () => {
-    let header = document.querySelector("#header")
-    header.classList.toggle('headerRoll', window.scrollY > 0)
-})
-
-window.onscroll = () =>{
+window.onscroll = () => {
     const scrollY2 = window.scrollY;
 
     section.forEach(sec => {
@@ -53,7 +60,7 @@ window.onscroll = () =>{
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
         const sectionClass = document.querySelector('.itemNav a[href*=' + id + ']')
-        
+
         if (scrollY2 > offsetTop && scrollY2 <= offsetTop + height) {
             sectionClass.classList.add('activeClass')
         } else {
@@ -71,8 +78,3 @@ for (let i = 0; i < numberOfColorBoxes; i++) {
     colorBox.classList.add('colorBox');
     bgAnimation.append(colorBox)
 }
-
-window.addEventListener("scroll", () => {
-    let header = document.querySelector("#header")
-    header.classList.toggle('headerRoll', window.scrollY > 0)
-})
