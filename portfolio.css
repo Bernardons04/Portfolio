@@ -477,7 +477,7 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    max-width: 35%;
+    max-width: 90%;
 }
 
 .aboutInfo h2 {
